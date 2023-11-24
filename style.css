@@ -440,11 +440,17 @@ header {
     font-size: 1em;
     width: 100px;
     height: 50px;
-    border-radius: 10px;
-    border: none;
+    border-radius: 25px;
+    border: 1px white solid;
     cursor: pointer;
-    background: #78582b;
+    background: var(--lightblack);
     color: white;
+}
+
+#btn:hover {
+    background: white;
+    color: var(--lightblack);
+    transition: 0.2s;
 }
 
 .inputBox span {
@@ -524,6 +530,11 @@ textarea {
     float: left;
     width: 49%;
     text-align: center;
+}
+
+.contact-img img {
+    width: 100%;
+    height: 100%;
 }
 
 .mid {
