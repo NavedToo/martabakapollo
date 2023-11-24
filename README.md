@@ -18,3 +18,5 @@ for the main interface
 https://youtu.be/riiFdR-qQPk?si=2qj-_l7fms3nbNb3
 
 and i use my own code to mix and match
+
+this project is far from success, but for now i'm proud of what i can accomplished
