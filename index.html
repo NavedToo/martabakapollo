@@ -222,6 +222,36 @@
 
     <script src="main.js"></script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        var btn = document.getElementById("btn");
+            btn.addEventListener("click", function (e) {
+                e.preventDefault();
+                var name = document.getElementById("name").value;
+                var email = document.getElementById("email").value;
+                var subject = document.getElementById("subject").value;
+                var message = document.getElementById("message").value;
+                var body =
+                    "Name: " +
+                    name +
+                    "<br/>------------------------------------------------------" +
+                    "<br/> Email: " +
+                    email +
+                    "<br/>------------------------------------------------------" +
+                    "<br/> Subject: " +
+                    subject +
+                    "<br/>------------------------------------------------------" +
+                    "<br/> Message: " +
+                    message;
+
+                Email.send({
+                    SecureToken: "6f26424c-2fa8-470e-9a60-0c8300eee07e",
+                    To: "martabak.uunyu@gmail.com",
+                    From: "unyuu.martabak@gmail.com",
+                    Subject: "Contact Message",
+                    Body: body,
+                }).then((message) => alert(message));
+            });
+    </script>
 </body>
 
 </html>
